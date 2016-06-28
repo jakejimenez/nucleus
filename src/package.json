@@ -1,0 +1,24 @@
+{
+  "name": "nucleus",
+  "version": "0.1.0",
+  "description": "Nucleus for reddit",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r00t1000/nucleus.git"
+  },
+  "author": "r00t1000",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r00t1000/nucleus/issues"
+  },
+  "homepage": "https://github.com/r00t1000/nucleus#readme",
+  "dependencies": {
+    "electron-prebuilt": "^1.2.5",
+    "jquery": "^3.0.0",
+    "menubar": "^4.1.2"
+  }
+}

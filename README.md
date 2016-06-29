@@ -1,2 +1,2 @@
 # nucleus
-A safe and secure browsing experience.
+A reddit client for the mac menubar.

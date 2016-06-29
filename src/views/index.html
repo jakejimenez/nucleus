@@ -3,20 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/photon.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
     <title>Nucleus</title>
 </head>
 
 <body>
-    <ul id="content" class="list-group">
-        <li class="list-group-header">
-            <input class="form-control" type="text" placeholder="Search front page">
-        </li>
-    </ul>
+    <!-- Content -->
+    <div id="content" class="list-group">
+        <div class="row">
+            <div class="col-xs-11">
+                <input class="form-control search" type="search" placeholder="Search front page">
+            </div>
+            <div class="col-xs-1">
+                <center><a id="reloadposts" href="#"><span class="refresh-posts glyphicon glyphicon-refresh"></span></a></center>
+            </div>
+        </div>
+        <div id="listofposts" class="list-group results">
+        </div>
+    </div>
+    <!-- End of Content -->
 
     <!-- Scripts -->
     <script>window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.js');</script>
+    <script src="../bower_components/aos/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/reddit.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+    <script src="../node_modules/holmes.js/js/holmes.js"></script>
+    <script>
+        holmes({
+            find: '.results a'
+        });
+    </script>
 </body>
 
 </html>

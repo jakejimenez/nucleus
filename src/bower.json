@@ -1,0 +1,23 @@
+{
+  "name": "nucleus",
+  "description": "Nucleus for reddit",
+  "main": "main.js",
+  "authors": [
+    "r00t1000"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "reddit"
+  ],
+  "homepage": "https://github.com/r00t1000/nucleus",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.0.4"
+  }
+}

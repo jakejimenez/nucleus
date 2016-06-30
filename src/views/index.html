@@ -3,24 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
     <title>Nucleus</title>
 </head>
 
 <body>
     <!-- Content -->
     <div id="content" class="list-group">
-        <div class="row">
-            <div class="col-xs-11">
-                <input class="form-control search" type="search" placeholder="Search front page">
-            </div>
-            <div class="col-xs-1">
-                <center><a id="reloadposts" href="#"><span class="refresh-posts glyphicon glyphicon-refresh"></span></a></center>
+        <div id="navbar-search" class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <input id="sub-search" class="form-control search" type="search" placeholder="/r/webdev">
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" id="init-search" class="btn btn-large btn-primary">Search</button>
+                </div>
+                <div class="col-xs-1">
+                    <center><a id="reloadposts" href="#"><span class="refresh-posts glyphicon glyphicon-refresh"></span></a></center>
+                </div>
             </div>
         </div>
-        <div id="listofposts" class="list-group results">
+        <br />
+        <div class="container">
+            <div id="listofposts" class="list-group results">
+            </div>
         </div>
     </div>
     <!-- End of Content -->
@@ -34,12 +43,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/reddit.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
-    <script src="../node_modules/holmes.js/js/holmes.js"></script>
-    <script>
-        holmes({
-            find: '.results a'
-        });
-    </script>
 </body>
 
 </html>

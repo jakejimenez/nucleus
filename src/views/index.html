@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
     <link rel="stylesheet" href="../css/animate.css" />
     <title>Nucleus</title>
 </head>
@@ -16,13 +15,16 @@
         <div id="navbar-search" class="container">
             <div class="row">
                 <div class="col-xs-9">
-                    <input id="sub-search" class="form-control search" type="search" placeholder="/r/webdev">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">/r/</span>
+                        <input id="sub-search" class="form-control search" type="search" placeholder="webdev" aria-describedby="basic-addon1">
+                    </div>
                 </div>
                 <div class="col-xs-2">
-                    <button type="button" id="init-search" class="btn btn-large btn-primary">Search</button>
+                    <button type="button" data-toggle="tooltip" title="Example: /r/webdev" id="init-search" class="btn btn-large btn-warning">Search</button>
                 </div>
                 <div class="col-xs-1">
-                    <center><a id="reloadposts" href="#"><span class="refresh-posts glyphicon glyphicon-refresh"></span></a></center>
+                    <center><a id="reloadposts" href="#"><span style="color: orange;" class="refresh-posts glyphicon glyphicon-refresh"></span></a></center>
                 </div>
             </div>
         </div>
@@ -36,13 +38,10 @@
 
     <!-- Scripts -->
     <script>window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.js');</script>
-    <script src="../bower_components/aos/dist/aos.js"></script>
-    <script>
-    AOS.init();
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/reddit.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
 </body>
 
 </html>
